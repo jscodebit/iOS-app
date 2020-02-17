@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Maitre D</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main class="conatiner">
+            <article class="row">
+                <section class="col-xs-4 col-sm-4"></section>
+                <section class="col-xs-4 col-sm-4">
+                    <h1 class="text-center">Maitre D</h1>
+                    <form action="javascript:void(0);">
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="total">Total: </label>
+                            <div class="col-sm-10">
+                                <input class="form-control" id="total" type="number" value="100" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="tip">Tip: </label>
+                            <div class="col-sm-4">
+                                <p class="form-control-plaintext" id="tip">$20.00</p>
+                            </div>
+                            <label class="col-sm-2 col-form-label" for="rate">Rate: </label>
+                            <div class="col-sm-4">
+                                <input class="form-control" id="rate" type="number" value="20.0" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label" for="rate">Tax: </label>
+                            <div class="col-md-6">
+                                <p class="form-control-plaintext" id="Tax">$5.50</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-4 col-form-label" for="grand_total">Grand Total: </label>
+                            <div class="col-sm-8">
+                                <p class="form-control-plaintext" id="grand_total"></p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-light" onclick="calculate()">Calculate</button>
+                        </div>
+                    </form>
+                </section>
+                <section class="col-xs-4 col-sm-4"></section>
+            </article>
+        </main>
+        <script src="./main.js"></script>
+        <script>calculate();</script>
+    </body>
+</html>
